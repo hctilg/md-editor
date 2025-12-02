@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/inter.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url('../font/noto_color_emoji.ttf');
+  font-display: swap;
+}
+
+.emoji {
+  font-family: 'Noto Color Emoji', sans-serif;
+}

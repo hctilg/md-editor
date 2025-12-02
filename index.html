@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <!-- Old versions of IE need this to be in the first response chunk -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="title" content="README Editor">
+    <meta name="description" content="README, Markdown, HTML Page, PDF Generator." />
+    <meta name="keywords" content="md-editor, markdown, html-pages, pdf, generator, editor, online-tools" />
+
+    <link rel="canonical" href="https://hctilg.github.io/md-editor/"/>
+    <meta property="og:url" content="https://hctilg.github.io/md-editor"/>
+    <meta property="og:site_name" content="HCTILG"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="README Editor" />
+    <meta property="og:description" content="README, Markdown, HTML Page, PDF Generator."/>
+    <meta property="og:locale" content="en_US"/>
+    <title> README </title>
+
+    <link rel="stylesheet" href="assets/css/home.css"/>
+  </head>
+  <body scrollbar="hide">
+    <div id="loading">
+      <div id="loading-bar"></div>
+    </div>
+    <section id="home" class="no-select">
+      <h2 id="headline">
+        <p>The easiest way to create a </p>
+        <span translate="no">⁪⁬⁪⁬<span id="typing"><noscript>README</noscript></span></span>
+      </h2>
+      <p id="headdoc">
+        Our simple editor allows you to add and customize all the sections you need for your project's readme, and then download it as Markdown, HTML, PDF.
+      </p>
+      <button class="mui-btn mui-btn--primary link-btn"><a id="start" class="link" href="editor"> Get Started </a></button>
+    </section>
+    <footer id="footer" class="no-select">
+      <span>Made with <span class="emoji">♥️</span> by <a href="https://github.com/hctilg/md-editor" target="_blank" rel="noopener noreferrer">Mahoor Nemati</a></span>
+    </footer>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/mui.min.js"></script>
+    <script defer>
+new Typed('#typing', { strings: ['README', 'HTML Page', 'PDF Book', 'Markdown'], showCursor: true, backDelay: 6000, typeSpeed: 80, backSpeed: 60, loop: true });
+const loading = document.getElementById('loading');
+const start_btn = document.getElementById('start');
+const start_link = start_btn.href;
+start_btn.removeAttribute('href');
+start_btn.onclick = ev => {
+  ev.preventDefault();
+  loading.classList.add('active');
+  setTimeout(() => window.location.replace(start_link), 618);
+};
+    </script>
+  </body>
+</html>
